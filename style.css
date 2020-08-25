@@ -139,6 +139,8 @@ nav a:hover {
   padding-bottom: 5%;
   color: white;
   height: 75%;
+  
+  min-height: 400px;
 }
 
 .represent h1 {
@@ -326,7 +328,7 @@ nav a:hover {
 .about h4 {
   align-self: center;
   padding-bottom: 3px;
-  border-top: 2px solid var(--dark);
+  /* border-top: 2px solid var(--dark); */
 }
 
 
@@ -424,6 +426,7 @@ footer {
   }
   .represent {
     width: 80%;  
+    height: 400px;
    }
 
  

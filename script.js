@@ -50,21 +50,19 @@ const scrollHeader = () => {
 
 const changeNavActive = () => {
   const changeAt = window.scrollY
-  const aboutTop = about.offsetTop - about.offsetHeight / 2;
-  const portfolioTop = portfolio.offsetTop - portfolio.offsetHeight;
+  const aboutTop = about.offsetTop - about.offsetHeight;
+  const portfolioTop = portfolio.offsetTop - portfolio.offsetHeight / 2;
   const contactTop = contact.offsetTop - contact.offsetHeight / 2;
 
-  if (changeAt < portfolioTop) {
+  if (changeAt < aboutTop) {
     removeNavClasses();
     document.querySelector('.link_home').classList.add('active')
-  }
-  else if (changeAt > portfolioTop && changeAt < aboutTop) {
-    removeNavClasses();
-    document.querySelector('.link_works').classList.add('active')
-  }
-  else if (changeAt > aboutTop && changeAt > portfolioTop && changeAt < contactTop) {
+  } else if (changeAt > aboutTop && changeAt < portfolioTop && changeAt < contactTop) {
     removeNavClasses();
     document.querySelector('.link_about').classList.add('active')
+  } else if (changeAt > portfolioTop && changeAt < contactTop) {
+    removeNavClasses();
+    document.querySelector('.link_works').classList.add('active')
   } else if (changeAt > contactTop) {
     removeNavClasses();
     document.querySelector('.link_contact').classList.add('active')
