@@ -399,10 +399,14 @@ footer {
   border-top: 3px solid var(--middle);
 }
 
+.footer-left {
+   
+}
+
 .copyright {
   font-size: 12px;
-  align-self: flex-end; 
 }
+
 
 
 
