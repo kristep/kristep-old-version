@@ -1,5 +1,5 @@
 const navbar = document.querySelector('nav');
-const logo = document.querySelector('.logo_cont');
+const logo = document.querySelector('.logo');
 const navLinks = document.querySelectorAll('.nav-link');
 const about = document.querySelector('.container_about');
 const portfolio = document.querySelector('.container_portfolio');
@@ -27,23 +27,19 @@ const scrollHeader = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       navbar.style.padding = "3vh";
       document.querySelector('header').style.backgroundColor = 'var(--dark)'
-      logo.style.width = '180px';
-      logo.style.height = '100px';
       logo.style.position = 'fixed';
-      logo.style.top = '0';
+      logo.style.top = '8px';
       logo.style.left = '0';
-      // logo.style.transform = 'translate(-36vw, -38vh)';
       logo.style.zIndex = '5'
-      logo.style.backgroundImage = 'url(./img/logo-white.png)';
+      logo.style.transform = 'scale(1)'
+
 
     } else {
       navbar.style.padding = "8vh";
       document.querySelector('header').style.backgroundColor = 'var(--dark-bigHeader)'
-      logo.style.width = '250px';
-      logo.style.height = '150px';
       logo.style.position = 'static';
       logo.style.transform = 'translate(0px, 0px)';
-      logo.style.backgroundImage = 'url(./img/logo-white.png)'
+      logo.style.transform = 'scale(1.3)'
     }
   }
 };

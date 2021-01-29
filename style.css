@@ -95,7 +95,7 @@ nav a:hover {
 /* ************* Mobiles first *********** */
 
 
-.logo_cont {
+.logo {
   visibility: hidden;
 }
 
@@ -166,6 +166,7 @@ nav a:hover {
   padding: 5px;
   margin: 0;
   z-index: 3;
+  text-transform: uppercase;
 }
 
 
@@ -419,14 +420,12 @@ footer {
 }
 
 @media only screen and (min-width: 540px) { 
-  .logo_cont {
+  .logo {
     visibility: visible;
     height: 100px;
     width: 180px;
-    background-image: url(./img/logo-white.png);
-    background-size: cover;
-    background-repeat: no-repeat;  
     transition: 0.4s;  
+    transform: scale(1.3);
   }
 }
 
