@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const about = document.querySelector('.container_about');
 const portfolio = document.querySelector('.container_portfolio');
 const contact = document.querySelector('.container_contact');
+const footerDate = document.querySelector('.footer-date');
 
 function debounce(func, wait = 15, immediate = true) {
   var timeout;
@@ -47,6 +48,12 @@ const scrollHeader = () => {
   }
 };
 
+const setFooterDate = () => {
+  const date = new Date();
+  const currentYear = date.getFullYear();
+  footerDate.innerHTML = currentYear;
+
+};
 
 const changeNavActive = () => {
   const changeAt = window.scrollY
@@ -72,6 +79,7 @@ const removeNavClasses = () => {
   navLinks.forEach(link => link.classList.remove('active'))
 };
 
+setFooterDate();
 
 //  EVENT HANDLERS
 

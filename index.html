@@ -134,9 +134,12 @@
   <div class="container ">
     <div class="contact container_contact section">
       <form action="https://formspree.io/mvowjopk" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Enter your message" required></textarea>
+        <label for="user-name">Name</label>
+        <input type="text" id="user-name" name="name" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
         <button class="btn" id="send" type="submit">Send</button>       
       </form>
     </div>
@@ -144,7 +147,7 @@
   
  <footer>
   <div class="footer-left">
-    <p class="copyright">© 2020 KriStep <br> All Rights Reserved </p>
+    <p class="copyright">© <span class="footer-date"></span> KriStep <br> All Rights Reserved </p>
     <p style="font-size: 10px; align-self: flex-start; justify-self: flex-end;"> <br> Photo by <a style="background-color:black;color:white;text-decoration:none;padding:2px 2px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:8px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pawel_czerwinski?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Paweł Czerwiński"><span style="display:inline-block;padding:2px 2px"><svg xmlns="http://www.w3.org/2000/svg" style="height:10px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Paweł Czerwiński</span></a></p>
   </div>
   <div class="social_media">
