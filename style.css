@@ -150,6 +150,7 @@ nav a:hover {
 .quote-author {
   font-style: italic;
   text-align: right;
+  font-size: 14px;
 }
 
 .fa-chevron-down {
