@@ -10,7 +10,7 @@ html {
 
 :root {
   --dark-hover: #123549d0;
-  --dark-bigHeader: #1640599b;
+  --dark-bigHeader: #1640594f;
   --dark: #164059;
   --middle: #C0A69C; 
   --light: rgb(233, 239, 243);
@@ -129,7 +129,7 @@ nav a:hover {
 
 .represent {
   color: black;
-  background-color: #2d62819b;
+  background-color: #16405963;
   font-size: 18px;
   padding-bottom: 5%;
   color: white;
@@ -437,7 +437,7 @@ footer {
     
   }
   nav {
-    padding: 8vh;  
+    padding: 6vh;  
   }
   nav a {
     font-size: 22px;
@@ -463,6 +463,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .represent {
     width: 70%;
+    max-width: 800px;
   }
   .projects {
     flex-direction: row;

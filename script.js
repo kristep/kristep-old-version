@@ -23,7 +23,6 @@ function debounce(func, wait = 15, immediate = true) {
 
 const scrollHeader = () => {
   if (window.screen.width > 550) {
-
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       navbar.style.padding = "3vh";
       document.querySelector('header').style.backgroundColor = 'var(--dark)'
@@ -32,10 +31,8 @@ const scrollHeader = () => {
       logo.style.left = '0';
       logo.style.zIndex = '5'
       logo.style.transform = 'scale(1)'
-
-
     } else {
-      navbar.style.padding = "8vh";
+      navbar.style.padding = "6vh";
       document.querySelector('header').style.backgroundColor = 'var(--dark-bigHeader)'
       logo.style.position = 'static';
       logo.style.transform = 'translate(0px, 0px)';
